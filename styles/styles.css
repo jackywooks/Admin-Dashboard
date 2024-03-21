@@ -217,15 +217,17 @@ main {
 
       .user {
         display: grid;
+        grid-template-columns: 50px 1fr;
         grid-template-areas:
           "svg username"
           "svg slogan";
-        place-content: center;
         margin: 0.5rem;
 
         svg {
           width: 50px;
           grid-area: svg;
+          align-self: center;
+          justify-self: start;
         }
 
         .username {
